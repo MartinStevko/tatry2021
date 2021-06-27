@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+			body {
+				background-color: #ffffff;
+				background-repeat: no-repeat;
+				background-image: url(tatry.jpg);
+			}
+
+			.container {
+				background: #232931;
+				width: 70%;
+				min-width: 300px;
+				margin: 100px auto;
+				position: relative;
+				margin-top: 10%;
+				box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+			}
+
+			.rb-container {
+				font-family: "PT Sans", sans-serif;
+				width: 100%;
+				margin: auto;
+				display: block;
+				position: relative;
+			}
+
+			.rb-container ul.rb {
+				display: inline-block;
+				margin: 5% 15%;
+				padding-left: 0;
+				width: 70%;
+			}
+
+			.rb-container ul.rb li {
+				list-style: none;
+				margin: auto;
+				padding: 0 0 5% 30px;
+				min-height: 50px;
+				border-left: 1px dashed #fff;
+				position: relative;
+			}
+
+			.rb-container ul.rb li:last-child {
+				border-left: 0;
+			}
+
+			.rb-container ul.rb li::before {
+				position: absolute;
+				left: -18px;
+				top: -5px;
+				content: " ";
+				border: 8px solid rgba(255, 255, 255, 1);
+				border-radius: 500%;
+				background: #50d890;
+				height: 20px;
+				width: 20px;
+				transition: all 500ms ease-in-out;
+			}
+
+			.rb-container ul.rb li:hover::before {
+				border-color: #232931;
+				transition: all 1000ms ease-in-out;
+			}
+
+			ul.rb li .timestamp {
+				color: #50d890;
+				position: relative;
+				font-size: 12px;
+				font-family: monospace;
+				margin: 10px 0;
+			}
+
+			.item-title {
+				color: #fff;
+			}
+
+			.white {
+				background-color: #ffffff;
+				width: 100%;
+				height: 780px;
+				position: absolute;
+				top: 300px;
+				left: 0;
+			}
+
+			h2 {
+				padding: 0;
+				color: #ffffff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="white"></div>
+		<div class="container">
+			<div class="rb-container">
+				<ul class="rb">
+					<h2>Deň D</h2>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 00:00, 0km, 0m<br>E: T + 00:00, 0km, 0m</div>
+						<div class="item-title">Tri studničky</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 02:45, 8km, 420m<br>E: T + 02:45, 8km, 420m</div>
+						<div class="item-title">Hlinská dolina ústie</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: skip<br>E: T + 04:30, 12km, 690m</div>
+						<div class="item-title">Nižné Temnosmrečinové pleso</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 05:25, 13km, 1210m<br>E: T + 07:10, 17km, 1480m</div>
+						<div class="item-title">Vyšné Kôprovské sedlo</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: skip<br>E: T + 08:15, 19km, 1670m</div>
+						<div class="item-title">Kôprovský štít</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 07:15, 17km, 1210m<br>E: T + 09:55, 23km, 1570m</div>
+						<div class="item-title">Chata pri Popradskom plese</div>
+					</li>
+
+					<h2>Deň D + 1</h2>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 00:00, 0km, 0m<br>E: T + 00:00, 0km, 0m</div>
+						<div class="item-title">Popradské pleso</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 02:35, 5km, 780m<br>E: T + 02:35, 5km, 780m</div>
+						<div class="item-title">Chata pod Rysmi</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 03:30, 6km, 1040m<br>E: T + 03:30, 6km, 1040m</div>
+						<div class="item-title">Rysy</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: skip<br>E: T + 09:40, 13km, 2150m</div>
+						<div class="item-title">Morské oko</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 04:10, 7km, 1040m<br>E: T + 10:20, 14km, 2150m</div>
+						<div class="item-title">Chata pod Rysmi</div>
+					</li>
+
+					<h2>Deň D + 2</h2>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 00:, 0km, 0m</div>
+						<div class="item-title">Chata pod Rysmi</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 01:55, 5km, 30m</div>
+						<div class="item-title">Chata pri Popradskom plese</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 06:00, 15km, 690m</div>
+						<div class="item-title">Sliezsky dom</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 10:00, 21km, 1520m</div>
+						<div class="item-title">Zbojnícka chata</div>
+					</li>
+
+					<h2>Deň D + 3</h2>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 00:00, 0km, 0m</div>
+						<div class="item-title">Zbojnícka chata</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 03:15, 5km, 640m</div>
+						<div class="item-title">Terryho chata</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 08:00, 16km, 1260m</div>
+						<div class="item-title">Chata pri Zelenom plese</div>
+					</li>
+
+					<h2>Deň D + 4</h2>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 00:00, 0km, 0m<br>E: T + 00:00, 0km, 0m</div>
+						<div class="item-title">Chata pri Zelenom plese</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: skip<br>E: T + 04:10, 6km, 680m</div>
+						<div class="item-title">Jahňací štít</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 02:00, 7km, 130m<br>E: T + 06:10, 13km, 810m</div>
+						<div class="item-title">Chata Plesnivec</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: T + 04:30, 12km, 150m<br>E: T + 08:40, 17km, 830m</div>
+						<div class="item-title">Čarda</div>
+					</li>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">N: skip<br>E: T + 09:50, 19km, 970m</div>
+						<div class="item-title">Belianska jaskyňa</div>
+					</li>
+
+					<h2>SUM</h2>
+					<li class="rb-item" ng-repeat="itembx">
+						<div class="timestamp">
+							N: 33:55h, 73km, 5180m<br>
+							E: 48:05h, 93km, 7470m<br>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
